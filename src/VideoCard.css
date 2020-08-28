@@ -1,0 +1,68 @@
+.videoCard {
+  color: white;
+  width: 375px;
+  height: 375px;
+  padding: 20px;
+  overflow-y: hidden;
+  transition: transform 100ms;
+}
+.videoCard > img {
+  height: 275px;
+  object-fit: contain; /*keeps aspect ratio */
+  width: 375px;
+}
+.videoCard .d-none {
+  display: none;
+}
+.videoCard:hover {
+  transform: scale(1.09); /* 9% bigger */
+}
+.videoCard > h2 {
+  padding-top: 10px;
+  font-size: 3rem;
+}
+.videoCard span span {
+  font-size: 1rem;
+}
+.videoCard__stats {
+  display: none;
+  font-size: 1.2rem;
+  transition: transform 100ms;
+}
+.videoCard:hover .videoCard__stats {
+  display: inline-block;
+  margin-top: 2px;
+}
+.videoCard .MuiSvgIcon-root {
+  font-size: 1.2rem !important;
+}
+@media only screen and (max-width: 1200px) {
+  .videoCard {
+    padding: 0 20px;
+  }
+  .videoCard h2 {
+    font-size: 3rem;
+  }
+  .videoCard p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .videoCard span span {
+    font-size: 1.3rem;
+  }
+  .videoCard p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .videoCard {
+    padding: 0 25px;
+  }
+  .videoCard span span {
+    font-size: 1.3rem;
+  }
+  .videoCard p {
+    font-size: 1.3rem;
+  }
+}

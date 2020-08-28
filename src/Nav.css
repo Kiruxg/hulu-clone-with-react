@@ -1,0 +1,54 @@
+.nav {
+  display: flex;
+  color: white;
+  overflow-x: scroll;
+  padding: 10px 40px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.nav::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.nav {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.nav h2 {
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  opacity: 0.7; /*slightly darker */
+  transition: transform 0.2s ease-out;
+}
+.nav h2:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 900px) {
+  .nav {
+    justify-content: left;
+    margin-top: 20px;
+  }
+  .nav h2 {
+    font-size: 2rem;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav {
+    padding: 4px;
+    justify-content: left;
+  }
+  .nav h2 {
+    font-size: 1.4rem;
+  }
+}
+/* 1200, 900, 600 */
